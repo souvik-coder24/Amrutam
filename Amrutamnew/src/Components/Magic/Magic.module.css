@@ -1,0 +1,287 @@
+.magic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 849px;
+}
+
+.headerSection {
+  width: 806px;
+  height: 164px;
+  margin-top: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.headerSection h1 {
+  width: 801px;
+  height: 56px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: rgba(58, 100, 59, 1);
+  font-family: 'DINpro-bold', sans-serif;
+  position: relative;
+}
+
+.headerSection h1::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 806px;
+  height: 5px;
+  background-color: rgba(195, 208, 196, 1);
+}
+
+.headerSection p {
+  width: 671px;
+  height: 84px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: 'DINpro', sans-serif;
+  color: rgba(102, 102, 102, 1);
+}
+
+.content {
+  margin-top: -3rem;
+}
+
+.magicCenter {
+  position: relative;
+    top: -190px;
+    width: 503px;
+    height: 522px;
+    z-index: 2;
+}
+
+.designImage {
+  width: 501px;
+  height: 505px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotateDesign 15s linear infinite;
+}
+
+.girlImage {
+  width: 492px;
+  height: 482px;
+  position: absolute;
+  top: 55%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.magicLeft {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.box {
+  width: 349px;
+  height: 100px;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+}
+
+.boxContent {
+  display: flex;
+  flex-direction: column;
+  width: 233px;
+  height: 96px;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.boxHeader {
+  width: 232px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.76px;
+  text-align: right;
+}
+
+.boxText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.61px;
+  text-align: right;
+  color: rgba(81, 81, 81, 1);
+  font-family: 'DINpro', sans-serif;
+}
+
+.boxImageContainer {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.magicRight {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+}
+
+.boxHeaderRight {
+  width: 232px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25.76px;
+  text-align: left;
+}
+
+.boxTextRight {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.61px;
+  text-align: left;
+  color: rgba(81, 81, 81, 1);
+  font-family: 'DINpro', sans-serif;
+}
+
+.combine {
+  width: 90rem;
+}
+
+@keyframes rotateDesign {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+  @media (max-width: 768px) {
+    .magic {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+    }
+    .magicCenter {
+      margin: 0 auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 90%;
+      height: auto;
+      order: 1;
+    }
+
+    .girlImage {
+      width: 204.43px;
+      height: 210.53px;
+      margin-top: 8rem;
+      margin-left: -14px;
+    }
+
+    .designImage {
+      width: 208.17px;
+      height: 220.57px;
+      margin-left: 1.6rem;
+    }
+  
+    .combine {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 16rem;
+      width: 329px;
+      height: 702px;
+      order: 2;
+    }
+  
+    .box {
+      width: 90%;
+      margin: 1rem 0;
+      position: relative;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .boxContent {
+      width: auto;
+      text-align: center;
+      align-items: center;
+      width: 136px;
+      height: 111px;
+      gap: 5px;
+    }
+    
+    .boxHeader,
+    .boxHeaderRight {
+      width: 124px;
+      height: 38px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 19.32px;
+      text-align: center;
+    }
+  
+    .boxText,
+    .boxTextRight {
+      font-size: 13px;
+      line-height: 16.74px;
+      text-align: center;
+    }
+  
+    .boxImageContainer {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .boxImage {
+      width: 60%;
+      height: auto;
+    }
+  
+    .headerSection {
+      width: 90%;
+      height: auto;
+      margin-top: 2rem;
+    }
+    
+    .headerSection h1::after {
+      display: none;
+    }
+    .headerSection h1 {
+      font-size: 28px;
+      line-height: 36px;
+      width: 336px;
+      height: 76px;
+    }
+  
+    .headerSection p {
+      font-size: 14px;
+      line-height: 21px;
+      width: 298px;
+      height: 84px;
+    }
+  }

@@ -1,0 +1,207 @@
+
+.consult {
+  top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 876px;
+    background-color: rgba(255, 247, 226, 1);
+  }
+  
+  .header {
+    width: 954px;
+    height: auto;
+    margin-top: 79px;
+    font-family: 'DINpro', sans-serif;
+    font-size: 48px;
+    line-height: 61.82px;
+    font-weight: 700;
+    color: rgba(58, 100, 59, 1);
+    position: relative;
+    text-align: center;
+  }
+  
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 950px;
+    height: 5px;
+    background-color: rgba(195, 208, 196, 1);
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 4rem;
+    width: 1275px;
+    height: auto;
+  }
+  
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid rgba(58, 100, 59, 1);
+    border-radius: 16px;
+    background-color: white;
+    color: rgba(58, 100, 59, 1);
+    font-family: 'DINpro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .boxLarge {
+    width: 522px;
+    height: 286px;
+    padding: 48px 32px;
+  }
+  
+  .largeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    width: 443px;
+    height: auto;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'DINpro', sans-serif;
+    line-height: 23.18px;
+  }
+  
+  .largeHeader {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 50.88px;
+    font-family: 'Inknut Antiqua', sans-serif;
+    text-align: center;
+  }
+  
+  .secondBox {
+    width: 371px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .boxSmall {
+    width: 311px;
+    height: 286px;
+    align-items: center;
+  }
+  
+  .smallContent {
+    width: 263px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  
+  .smallHeader {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.91px;
+    font-family: 'DINpro-bold', sans-serif;
+  }
+  
+  .smallText {
+    font-size: 20px;
+    line-height: 25.76px;
+    font-weight: 400;
+    color: rgba(65, 65, 65, 1);
+  }
+  
+  .image {
+    width: 311px;
+    height: 300px;
+  }
+  
+  .imageLast {
+    width: 294px;
+    height: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .consult {
+      margin-top: 25rem;
+      height: 2050px;
+    }
+    .header {
+      width: 90%;
+      font-size: 32px;
+      line-height: 40px;
+      margin-top: 16px;
+    }
+  
+    .header::after {
+      display: none;
+    }
+  
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+  
+    .boxLarge {
+      width: 90%;
+      height: auto;
+      padding: 24px 16px;
+    }
+  
+    .largeHeader {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  
+    .largeContent {
+      gap: 12px;
+      font-size: 16px;
+    }
+  
+    .secondBox,
+    .image,
+    .imageLast {
+        width: 324px;
+        height: 252px;
+      border-radius: 16px;
+    }
+  
+    .boxSmall {
+        width: 324px;
+        height: 252px;
+        padding: 16px;
+    }
+  
+    .smallContent {
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .smallHeader {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    .smallText {
+        width: 240px;
+        height: 104px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  

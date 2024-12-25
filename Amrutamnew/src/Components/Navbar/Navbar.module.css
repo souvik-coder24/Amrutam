@@ -1,0 +1,119 @@
+/* Navbar Container */
+.navbar {
+    background-color: rgba(255, 247, 226, 1);
+    padding: 30px;
+    position: relative;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo img {
+    display: none;
+  }
+  
+  /* Styles for Hamburger Menu */
+  .hamburgerIcon {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+  }
+  
+  .hamburgerIcon div {
+    background-color: #557a58;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburgerIcon div:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburgerIcon div:nth-child(2) {
+    top: 8px;
+  }
+  
+  .hamburgerIcon div:nth-child(3) {
+    top: 16px;
+  }
+  
+  .mobileMenu {
+    position: absolute;
+    display: none;
+    top: 6rem;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 4px 10px 12px rgba(0, 0, 0, 0.6);
+  }
+  
+  .mobileMenu ul {
+    list-style-type: none;
+    text-align: left;
+  }
+  
+  .mobileMenu ul li {
+    margin: 8px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #557a58;
+  }
+  
+  .mobileMenu ul li:active {
+    color: #004d00;
+  }
+  
+  /* Styles for Mobile */
+  @media screen and (max-width: 768px) {
+    .section {
+      display: flex;
+      gap: 4.1rem;
+      margin-top: 1.6rem;
+    }
+  
+    .section img {
+      display: block;
+      height: 24px;
+    }
+  
+    .hamburgerIcon {
+      display: block;
+      padding: 10px;
+      z-index: 1000;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+    }
+  
+    .mobileMenu {
+      display: block;
+      z-index: 2;
+    }
+  
+    .mobileMenu ul li {
+      text-align: left;
+    }
+  
+    .hamburgerIcon.active div:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburgerIcon.active div:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburgerIcon.active div:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+  
